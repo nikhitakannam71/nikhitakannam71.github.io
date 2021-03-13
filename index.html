@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html>
 <title>CS 355 Home Page</title>
-    <body>
-        <h1>This is my home page for CS 355</h1>
+<style>
 
+    html {
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0;
+        box-sizing: inherit;
+
+    }
+    header{
+        background: #7D6167;
+        color: floralwhite;
+        padding: 10px;
+        font-size: 20px;
+        font-family: Futura, cursive;
+    }
+
+    h2 {
+        font-family: 'Caveat', cursive;
+        font-size: 50px;
+        font-weight: 400;
+        margin: 0;
+        padding: 5px;
+    }
+    .projects {
+        background: mistyrose;
+        color: #7D6168;
+        padding: 10px;
+    }
+    .projects ul{
+        font-family: Helvetica;
+    }
+    a{
+        color: #7D6168;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+
+
+</style>
+
+    <body>
+    <header><h1>This is my home page for CS 355</h1></header>
+
+
+    <section class = "projects">
+        <h2>Projects</h2>
         <ul>
             <p><a href="weather.html">Weather App</a></p>
             <p><a href="CSS-project">LL Resume Project</a></p>
             <p><a href="Typing-Speed-Test">Typing Speed Test</a></p>
             <p><a href="Digital-Analog-Clock">Digital Analog Clock</a>
         </ul>
+    </section>
     </body>
 </html>
 
