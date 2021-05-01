@@ -321,18 +321,18 @@ input[type=text] {
     }
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-device-width: 501px) {
     div.example {
         font-size: 75px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-device-width: 500px) {
     div.example {
         font-size: 25px;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-device-width: 500px) {
     .first,
     .second,
     .third {
