@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+  Name: Nikhita Kannam, Christen De Ocampo
+  Date: 04/20/21
+  Section: CS 355
+
+  This is the instr-createcourse.html for the website
+  application. This is where instructors can create a course.
+-->
+<html class="bg-instr" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>QCFirst</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+    <body>
+        <main>
+            <header>
+                <div class="content-wrap">
+                    <a href="instr-home.html"><img src="img/Education_Guide_Logo_Round.png" alt="haha" width="150" height="150"></a>
+                    <h1 id="title-style">QCFirst</h1>
+                </div>
+                <div class="navbar">
+                    <a href="index.html">Sign Out</a>
+                    <a class="active" href="instr-createcourse.html">Create Course</a>
+                    <a href="instr-home.html">Instructor Home</a>      
+                    <a href="management.html">Course Management</a>            
+                </div> 
+            </header>
+            <div class="content-wrap">
+                <h2 id="background">Enter the following course information:</h2>
+            </div>
+            <section class="section-wrap">
+                <div class="content-wrap">
+                    <form id="align">
+                        <label for = "id">ID: </label>
+                        <input type = "text" id = "id"><br>
+                        <label for="semester">Semester: </label>
+                        <input type="text" id="semester"><br>
+                        <label for = "department">Department: </label>
+                        <input type = "text" id = "department"><br>
+                        <label for="instructor">Instructor: </label>
+                        <input type="text" id="instructor"><br>
+                        <label for = "roster">Roster of Students: </label>
+                        <input type = "text" id = "roster"><br>
+                        <label for="desc">Description: </label>
+                        <input type="text" id="desc"><br>
+                        <label for = "cap">Capacity: </label>
+                        <input type = "text" id = "cap"><br>
+                        <label for="schedule">Schedule: </label>
+                        <input type="text" id="schedule"><br>
+                        <label for = "enroll">Enrollment Deadline: </label>
+                        <input type = "text" id = "enroll"><br>
+                        <a class="btn" href="management.html">Create Course</a>
+                        <a class="btn" href="management.html">Back</a>
+                    </form>
+                </div> 
+            </section>
+            <footer class="footer">
+                <p>Copyright &#169; 2021: By NC</p>
+            </footer>
+        </main>
+    </body>
+</html>

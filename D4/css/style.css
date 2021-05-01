@@ -1,0 +1,328 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+}
+#title-style {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+.footer {
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+}
+/* Source: https://css-tricks.com/perfect-full-page-background-image/ */
+.bg-image { 
+    background: url(../img/bg-home-signup.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-student { 
+    background: url(../img/bg-student-home.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-instr { 
+    background: url(../img/bg-instr.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header {
+    background-image: linear-gradient(white, #5680E9);
+}
+footer {
+    background-image: linear-gradient(#5680E9, white);
+    padding: 20px;
+    color: white;
+}
+.section-wrap2 {
+    background: rgba(51, 51, 51, 0.9);
+    margin: auto;
+    width: 75%;
+    padding: 40px 0;
+}
+.section-wrap {
+    background: rgba(51, 51, 51, 0.9);
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 75%;
+    padding: 40px 0;
+}
+#instr-border-home {
+    border-style: solid;
+}
+#background {
+    background-color: #5680E9;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+li {
+    background-color: #5680E9;
+    list-style: none;
+    text-align: left;
+    color: white;
+    margin: 10px 0;
+}
+#instr-courses {
+    text-align: center;
+    background-color: #5680E9;
+    list-style: none;
+    color: white;
+    padding: 100px;
+}
+.content-wrap {
+    width: 75%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+#courses-bg {
+    background-color: #344E8E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* Source: https://www.w3schools.com/howto/howto_css_searchbar.asp */
+#search-bar {
+    float: right;
+    border: none;
+    margin: 0;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 16px;
+    font-size: 16px;
+}
+nav ul {
+    height: 200px;
+    width: 100%;
+    overflow-y: scroll;
+}
+.instr-courses {
+    text-align: left;
+    padding-left: 20px;
+}
+.course-collapse {
+    background-color: #5680E9;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .course-collapse:hover {
+    background-color: #333;
+}
+.btn {
+    background: #5680E9;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.btn:hover {
+    background: #344E8E;
+}
+/* https://www.w3schools.com/css/css_form.asp */
+input[type=text] {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px 20px;
+    margin: 8px 0;
+}
+#create-left {
+    text-align: left;
+}
+/* Source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+.navbar a.active {
+    background-color: #5680E9;
+    color: white;
+}
+#align {
+    display: inline-block;
+    width: 325px;
+    text-align: right;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#info {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 60%;
+    text-align: left;
+}
+#student-course {
+    display: inline-block;
+    background-color: #e3f1ff;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+    width: 45%;
+    list-style-type: none;
+}
+#your-course {
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 25px;
+}
+.schedule-1 {
+    list-style-type: none;
+    width: 80%;
+    display: inline-block;
+    font-family: Copperplate, serif;
+    font-size: 18px;
+}
+.schedule-1 :nth-child(1) {
+    background-color: #9ae0fa;
+    width: 55%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.schedule-1 :nth-child(2) {
+    background-color: #c099ff;
+    width: 55%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.schedule-1 :nth-child(3) {
+    background-color: #8dfccd;
+    width: 55%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.schedule-1 :nth-child(4) {
+    background-color: #f191f5;
+    width: 55%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.schedule-1 :nth-child(5) {
+    background-color: #facf97;
+    width: 55%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+#background-1 {
+    background-color: #5680E9;
+    color: white;
+    display: inline-block;
+    width: 60%;
+    padding: 15px;
+}
+#search-course {
+    display: inline-block;
+    padding: 10px;
+    width: 55%;
+    border-radius: 10px;
+    border-width: 2px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#enrollment-wrap {
+    display: inline-block;
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+#courselist {
+    display: inline-block;
+    background-color:	#e3f1ff;;
+    padding: 15px;
+    width: 70%;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+
+
+
+
+
