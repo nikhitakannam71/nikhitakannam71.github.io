@@ -4,6 +4,9 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+html, body {
+    min-width: 550px;
+}
 body {
     color: white;
     margin: 0;
@@ -298,42 +301,8 @@ input[type=text] {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}
-}
-
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-
-@media (min-device-width:600px) {
-    img[data-src-600px] {
-        content: attr(data-src-600px, url);
-    }
-}
-
-@media (min-device-width:800px) {
-    img[data-src-800px] {
-        content: attr(data-src-800px, url);
-    }
-}
 
 
-@media screen and (max-device-width: 500px) {
-    div.example {
-        font-size: 60%;
-    }
-}
-@media screen and (max-device-width: 500px) {
-    .first,
-    .second,
-    .third {
-        width: 80%;
-    }
-}
 
 
 
