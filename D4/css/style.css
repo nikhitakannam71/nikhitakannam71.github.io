@@ -329,7 +329,7 @@ input[type=text] {
 
 @media screen and (max-width: 500px) {
     div.example {
-        font-size: 35px;
+        font-size: 25px;
     }
 }
 @media screen and (max-width: 500px) {
