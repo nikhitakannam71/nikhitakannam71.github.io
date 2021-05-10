@@ -4,13 +4,17 @@
   Date: 04/20/2021
   Section: CSCI 355
 
-  This is the management.html page for the QCfirst website.
+  This is the management.html page for the QCfirst website. 
 -->
 <html class="bg-instr" lang="en-US">
 <head>
     <meta charset="UTF-8">
     <title>QCFirst</title>
     <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/index.js" defer></script>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
@@ -19,14 +23,21 @@
         <main>
             <header class = "header">
                 <div class="content-wrap">
-                    <a href="instr-home.html"><img src="img/Education_Guide_Logo_Round.png" alt="haha" width="150" height="150"></a>
+                    <a href="instr-home.html"><img src="img/Education_Guide_Logo_Round.png" alt="haha" width="150" height="150" class="responsive"></a>
                     <h1 id="title-style">QCFirst</h1>
                 </div>
-                <div class="navbar">
-                    <a href="instr-home.html">Instructor Home</a>
-                    <a class="active" href="management.html">Course Management</a>      
-                    <a href="index.html">Sign Out</a>               
-                </div>
+                <nav class="navbar">
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <div class="navbar-links">
+                        <a href="instr-home.html">Instructor Home</a>
+                        <a class="active" href="management.html">Course Management</a>      
+                        <a href="index.html">Sign Out</a>
+                    </div>
+                </nav>
             </header>
             <div class="content-wrap">
                 <h2 id="background">Manage Courses</h2>
@@ -36,14 +47,19 @@
                     <div id="courses-bg">
                         <h2 class="instr-courses" id="background">Courses
                             <input id="search-bar" type="text" placeholder="Search For Course...">
-                            <img id="img-search-bar" src="img/magnifying-glass-4186151_640.png" alt="searchbar" width="15" height="15">
+                            <img class="responsive" src="img/magnifying-glass-4186151_640.png" alt="searchbar" width="15" height="15">
                         </h2>
+                    </div>
+                </div>
+            </section>
+            <section class="section-wrap">
+                <div class="content-wrap">
                         <div class="scroll">
                             <div class="course-stuff">
-                                <button class="course-collapse">Course Name #1</button>
+                                <button class="course-collapse">Course Name #1<input id="checkbox-style" type="checkbox"></button>
                                 <div class="content">
                                     <nav>
-                                        <ul id="instr-list"> 
+                                        <ul id="background"> 
                                             <li>ID: 001</li>
                                             <li>Semester: Fall 2021</li>
                                             <li>Department: Masters of Dark Art</li>
@@ -56,9 +72,9 @@
                                         </ul>
                                     </nav>
                                 </div>
-                                <button class="course-collapse">Course Name #2</button>
+                                <button class="course-collapse">Course Name #2<input id="checkbox-style" type="checkbox"></button>
                                 <nav>
-                                    <ul id="instr-list"> 
+                                    <ul id="background"> 
                                         <li>ID: 002</li>
                                         <li>Semester: Fall 2021</li>
                                         <li>Department: Math</li>
@@ -70,11 +86,11 @@
                                         <li>Enrollment Deadline: June 25, 2021</li>
                                     </ul>
                                 </nav>
-                                <button class="course-collapse">Course Name #3</button>
+                                <button class="course-collapse">Course Name #3<input id="checkbox-style" type="checkbox"></button>
                                 <ul></ul>
-                                <button class="course-collapse">Course Name #4</button>
+                                <button class="course-collapse">Course Name #4<input id="checkbox-style" type="checkbox"></button>
                                 <ul></ul>
-                                <button class="course-collapse">Course Name #5</button>
+                                <button class="course-collapse">Course Name #5<input id="checkbox-style" type="checkbox"></button>
                                 <ul></ul>
                             </div>
                         </div>

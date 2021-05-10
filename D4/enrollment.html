@@ -4,13 +4,15 @@
   Date: 04/20/2021
   Section: CSCI 355
 
-  This is the enrollment.html page for the QCfirst website.
+  This is the enrollment.html page for the QCfirst website. 
 -->
 <html class = "bg-student" lang="en-US">
 <head>
     <meta charset="UTF-8">
     <title>QCFirst</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
@@ -19,20 +21,27 @@
         <main>
             <header class = "header">
                 <div class="content-wrap">
-                    <a href="student-home.html"><img src="img/Education_Guide_Logo_Round.png" alt="haha" width="150" height="150"></a>
+                    <a href="student-home.html"><img src="img/Education_Guide_Logo_Round.png" alt="haha" width="150" height="150" class="responsive"></a>
                     <h1 id="title-style">QCFirst</h1>
                 </div>
-                <div class="navbar">
-                    <a href="student-home.html">Student Home</a>
-                    <a class = "active" href="enrollment.html">Enrollment Page</a> 
-                    <a href="index.html">Sign Out</a>
-                </div>
+               <nav class="navbar">
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <div class="navbar-links">
+                        <a href="student-home.html">Student Home</a>      
+                        <a class="active" href="enrollment.html">Enrollment Page</a> 
+                        <a href="index.html">Sign Out</a>
+                    </div>
+                </nav>
             </header>
             <div class="content-wrap">
                 <h4 id = "background-1">Search for courses below. Select the courses you wish to enroll in and click "Enroll"
-                <br></h4>
+                </br></h4>
             </div>
-            <section>
+            <section >
                 <section class = "section-wrap" id="search-course">
                     <div class="content-wrap">
                         <input type="text" placeholder="Search For Course...">
@@ -40,14 +49,14 @@
                     </div>
                     <div class="content-wrap" >
                         <ul>
-                            <li id = "courselist">Course #1</li><br>
-                            <li id = "courselist">Course #2</li><br>
-                            <li id = "courselist">Course #3</li><br>
+                            <li id = "courselist"><input type="checkbox">Course #1</li><br>
+                            <li id = "courselist"><input type="checkbox">Course #2</li><br>
+                            <li id = "courselist"><input type="checkbox">Course #3</li><br>
                         </ul>  
                     </div>
                     <a class="btn">Enroll</a>
-                </section>
-                <h3 id = "background-1"> Schedule </h3>
+                 </section>
+                  <h3 id = "background-1"> Schedule </h3>
                 <section class = "section-wrap" id="enrollment-wrap">
                     <div class="content-wrap">
                         <ol class = "schedule-1">
@@ -60,6 +69,7 @@
                     </div>
                     <a class="btn" href="student-home.html">Back</a>
                 </section>
+                </div>
             </section>
             <footer class = "footer">
                 <p>Copyright &#169; 2021: By NC</p>

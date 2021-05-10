@@ -196,3 +196,13 @@ body {
     #E95D0F
      */
 }
+
+footer {
+    background: darkblue;
+    text-align: center;
+    color: white;
+}
+
+footer a:hover {
+    color: yellow;
+}

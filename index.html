@@ -1,79 +1,43 @@
 <!DOCTYPE html>
 <html>
 <title>CS 355 Home Page</title>
-<style>
-
-    html {
-        box-sizing: border-box;
-        text-align: center;
-        margin: 0;
-        box-sizing: inherit;
-
-    }
-    header{
-        background: #7d6167;
-
-        color: white;
-        padding: 25px;
-        font-size: 20px;
-        font-family: Futura, cursive;
-    }
-
-    h2 {
-        font-family: 'Caveat', cursive;
-        font-size: 50px;
-        font-weight: 400;
-        margin: 0;
-        padding: 5px;
-    }
-
-    .projects {
-        background: #ffe8e8;
-        padding: 10px;
-        padding-bottom: 400px;
-        color: #7D6168;
-    }
-
-    section {
-        border-style: double;
-        border-color: #7d6167;
-        border-bottom-width: thick;
-    }
-
-
-    .projects ul{
-        font-family: Helvetica;
-    }
-    a{
-        color: #7D6168;
-    }
-    a:hover{
-        text-decoration: none;
-    }
-    footer{
-        background: #7d6167;
-        padding: 20px;
-        font-size: 50px;
-        font-family: Futura, cursive;
-    }
-
-
-</style>
-
-    <header><h1>This is my home page for CS 355</h1></header>
-
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<header>
+        <h1>This is my home page for CS 355</h1>
+        <p>My name is Nikhita Kannam and I am a junior in Queens College. I am a Computer Science major
+        and a math minor. I have experience in C++ and Java. Although I know basic python I want to continue to learn and perfect the language. In CS355 I acquired knowledge in HTML, CSS, Javascript, node.js, jQuery, SQL and MongoDB. </p>
+    </header>
 <body>
-    <section class = "projects">
+    <section class = "section-wrap">
         <h2>Projects</h2>
-        <ul>
-            <p><a href="weather.html">Weather App</a></p>
-            <p><a href="CSS-project">LL Resume Project</a></p>
-            <p><a href="Typing-Speed-Test">Typing Speed Test</a></p>
-            <p><a href="Digital-Analog-Clock">Digital Analog Clock</a>
+        <section class = projects>
+            <p><a href="Weather-App/weather.html">Weather App</a></p>
+            <p><a href="Digital-Analog-Clock/index.html">Digital Analog Clock</a>
+        </section>
+        <h2>LinkedIn Learning Projects</h2>
+        <section class = projects>
+            <p><a href="CSS-project/index.html">LL Resume Project</a></p>
+            <p><a href="Typing-Speed-Test/index.html">Typing Speed Test</a></p>
+            <p><a href = "Chat-App">Chat App</a></p>
+        </section>
+        <h2>FreeCodeCamp Exercises</h2>
+        <section class = projects>
             <p><a href = "https://classic-funny-second.glitch.me/">Managing Packages</a></p>
             <p><a href = "https://carnation-mammoth-manicure.glitch.me/">Basic Node and Express</a></p>
-            <p><a href = "D4">Term Project - QCfirst</a></p>
-        </ul>
+            <p><a href = "https://boilerplate-project-timestamp-1.nikhitakannam.repl.co">Time Stamp</a></p>
+            <p><a href = "https://boilerplate-project-filemetadata.nikhitakannam.repl.co">FileMetaData</a></p>
+            <p><a href = "https://boilerplate-project-urlshortener-1.nikhitakannam.repl.co">URL Shortener</a></p>
+            <p><a href = "https://boilerplate-project-exercisetracker.nikhitakannam.repl.co">Exercise Tracker</a></p>
+            <p><a href = "https://boilerplate-project-headerparser-2.nikhitakannam.repl.co">Header Parser</a></p>
+
+        </section>
+        <h2>Term Project</h2>
+        <section class = projects>
+            <p><a href = "D4/index.html">QCfirst</a></p>
+        </section>
     </section>
     </body>
 <footer></footer>

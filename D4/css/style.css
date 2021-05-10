@@ -4,9 +4,6 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-html, body {
-    min-width: 550px;
-}
 body {
     color: white;
     margin: 0;
@@ -28,9 +25,8 @@ body {
     color: #333;
     font-weight: bold;
 }
-/* Source: https://css-tricks.com/perfect-full-page-background-image/ */
 .bg-image { 
-    background: url(../img/bg-home-signup.jpeg) no-repeat center center fixed;
+    background: url(../img/bg-home-signup.jpeg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -57,12 +53,14 @@ footer {
     background-image: linear-gradient(#5680E9, white);
     padding: 20px;
     color: white;
+    
 }
 .section-wrap2 {
     background: rgba(51, 51, 51, 0.9);
     margin: auto;
     width: 75%;
     padding: 40px 0;
+    border-radius: 10px;
 }
 .section-wrap {
     background: rgba(51, 51, 51, 0.9);
@@ -72,6 +70,7 @@ footer {
     margin-bottom: 75px;
     width: 75%;
     padding: 40px 0;
+    border-radius: 10px;
 }
 #instr-border-home {
     border-style: solid;
@@ -81,7 +80,10 @@ footer {
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     list-style: none;
+    text-align: center;
 }
 li {
     background-color: #5680E9;
@@ -91,7 +93,7 @@ li {
     margin: 10px 0;
 }
 #instr-courses {
-    text-align: center;
+    text-align: middle;
     background-color: #5680E9;
     list-style: none;
     color: white;
@@ -104,20 +106,19 @@ li {
 }
 #courses-bg {
     background-color: #344E8E;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
 }
-/* Source: https://www.w3schools.com/howto/howto_css_searchbar.asp */
-#search-bar {
+#search-bar input[type=text]{
     float: right;
     border: none;
     margin: 0;
     overflow: hidden;
-    margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-top: 8px;
     margin-right: 16px;
     font-size: 16px;
+    padding: 6px;
 }
 nav ul {
     height: 200px;
@@ -127,6 +128,7 @@ nav ul {
 .instr-courses {
     text-align: left;
     padding-left: 20px;
+    margin-top: 0px;
 }
 .course-collapse {
     background-color: #5680E9;
@@ -147,13 +149,13 @@ nav ul {
     color: white;
     text-decoration: none;
     padding: 8px;
+    margin-top: 3px;
     border-radius: 4px;
     display: inline-block;
 }
 .btn:hover {
     background: #344E8E;
 }
-/* https://www.w3schools.com/css/css_form.asp */
 input[type=text] {
     box-sizing: border-box;
     width: 50%;
@@ -163,47 +165,131 @@ input[type=text] {
 #create-left {
     text-align: left;
 }
-/* Source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #333;
-    overflow: hidden;
+    color: white;
+    /*height: 50px;*/
 }
-.navbar a {
-    float: left;
-    color: #f2f2f2;
-    padding: 14px 16px;
-    text-align: center;
-    font-size: 17px;
+.navbar-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links {
+    list-style: none;
+}
+.navbar-links a {
     text-decoration: none;
+    color: #f2f2f2;
+    padding: 1rem;
+    display: block;
 }
-.navbar a:hover {
+.navbar-links a:hover {
     background-color: white;
     color: black;
 }
-.navbar a.active {
+.navbar-links a.active {
     background-color: #5680E9;
     color: white;
 }
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+}
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links {
+        text-align: center;
+    }
+    .navbar-links a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    #align label {
+        font-size: 12px;
+    }
+    div, li, h3, h2 {
+        font-size: 12px;
+    }
+    #title-style {
+        font-size: 15px;
+    }
+    #info, #your-courses, #enrollment-wrap {
+        text-align: left;
+    }
+    #value {
+        font-size: 9px;
+        
+    }
+    .responsive {
+        max-width: 100%;
+        height: auto;
+    }
+}
 #align {
+    font-size: 18px;
     display: inline-block;
-    width: 325px;
-    text-align: right;
+    text-align: center;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    width: 100%;
+    height: 100%;
+}
+#align label {
+    display: block;
+}
+input[type="password"] {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 8px 0;
 }
 #info {
     display: inline-block;
     color: white;
     font-size: 18px;
-    font-weight: bold;
+    font: bold;
     width: 60%;
     text-align: left;
+    border-width: 5px;
+    border-color: white;
+    border-style: double;
 }
 #student-course {
     display: inline-block;
     background-color: #e3f1ff;
     border-radius: 10px;
     color: black;
-    font-weight: bold;
+    font: bold;
     font-size: 16px;
     margin: 10px;
     padding: 10px;
@@ -214,57 +300,60 @@ input[type=text] {
     display: inline-block;
     width: 80%;
     margin-bottom: 25px;
+    border-radius: 10px;
 }
 .schedule-1 {
     list-style-type: none;
-    width: 80%;
-    display: inline-block;
-    font-family: Copperplate, serif;
-    font-size: 18px;
+    width: 90%;
+    display: inline-table;
+    font-family: Copperplate;
+    font-size: 18px; 
 }
+
+
 .schedule-1 :nth-child(1) {
     background-color: #9ae0fa;
-    width: 55%;
-    padding: 20px;
+    width: 60%;
+    padding: 25px;
     border-radius: 10px;
     text-align: center;
-    display: inline-block;
+    display: inline-table;
     margin-bottom: 10px;
 }
 .schedule-1 :nth-child(2) {
     background-color: #c099ff;
-    width: 55%;
-    padding: 20px;
+    width: 60%;
+    padding: 25px;
     border-radius: 10px;
     text-align: center;
-    display: inline-block;
+    display: inline-table;
     margin-bottom: 10px;
 }
 .schedule-1 :nth-child(3) {
     background-color: #8dfccd;
-    width: 55%;
-    padding: 20px;
+    width: 60%;
+    padding: 25px;
     border-radius: 10px;
     text-align: center;
-    display: inline-block;
+    display: inline-table;
     margin-bottom: 10px;
 }
 .schedule-1 :nth-child(4) {
     background-color: #f191f5;
-    width: 55%;
-    padding: 20px;
+    width: 60%;
+    padding: 25px;
     border-radius: 10px;
     text-align: center;
-    display: inline-block;
+    display: inline-table;
     margin-bottom: 10px;
 }
 .schedule-1 :nth-child(5) {
     background-color: #facf97;
-    width: 55%;
-    padding: 20px;
+    width: 60%;
+    padding: 25px;
     border-radius: 10px;
     text-align: center;
-    display: inline-block;
+    display: inline-table;
     margin-bottom: 10px;
 }
 #background-1 {
@@ -274,15 +363,17 @@ input[type=text] {
     width: 60%;
     padding: 15px;
 }
+
 #search-course {
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
     width: 55%;
     border-radius: 10px;
     border-width: 2px;
     font-size: 18px;
     margin-bottom: 20px;
 }
+
 #enrollment-wrap {
     display: inline-block;
     width: 60%;
@@ -301,10 +392,56 @@ input[type=text] {
     border-radius: 10px;
 }
 
+#value{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    width: 40%;
+    border-color: #5680E9;
+    border-width: 4px;
+}
 
+#search-course {
+    display: inline-table;
+}
 
+#search-course li {
+    display: inline-table;
+}
 
+#courses li {
+    display: inline-table;
+}
 
+#courselist:focus {
+  background: #5680E9
+}
+
+#home {
+    margin: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    font-size: 20px;
+    display: inline-table;
+}
+
+#home:hover{
+  background:#fff;
+  color:#5680E9;
+  padding-right: 35px;
+  padding-left: 35px;
+  border-radius: 5px;
+}
+
+#bg-image h3 {
+    font-size: 25px;
+    font-weight: normal;
+}
 
 
 

@@ -4,13 +4,23 @@
   Date: 04/20/2021
   Section: CSCI 355
 
-  This is the student-home.html page for the QCfirst website.
+  This is the student-home.html page for the QCfirst website. 
 -->
 <html class = "bg-student" lang="en-US">
 <head>
     <meta charset="UTF-8">
     <title>QCFirst</title>
     <link href="css/style.css" rel="stylesheet">
+    
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="js/index.js" defer></script>
+    <script src="js/student-form.js"></script>
+
+
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
@@ -19,14 +29,21 @@
         <main>
             <header class = "header">
                 <div class="content-wrap">
-                    <a href="student-home.html"><img src="img/Education_Guide_Logo_Round.png" alt="haha" width="150" height="150"></a>
+                    <a href="student-home.html"><img src="img/Education_Guide_Logo_Round.png" alt="haha" width="150" height="150" class="responsive"></a>
                     <h1 id="title-style">QCFirst</h1>
                 </div>
-                 <div class="navbar">
-                    <a class = "active" href="student-home.html">Student Home</a>
-                    <a href="enrollment.html">Enrollment Page</a>
-                    <a href="index.html">Sign Out</a>
-                </div>
+                <nav class="navbar">
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <div class="navbar-links">
+                        <a class="active" href="student-home.html">Student Home</a>      
+                        <a href="enrollment.html">Enrollment Page</a> 
+                        <a href="index.html" onclick="signOut()" id="signOut">Sign Out</a>  
+                    </div>
+                </nav>
             </header>
             <h3 id = "background-1">Student Information</h3>
             <section class = "section-wrap" id = "info">
@@ -41,22 +58,23 @@
             <h3 id = "background-1"> Courses you are currently enrolled in: </h3>
             <section class="section-wrap" id = "your-course">
                 <div class="content-wrap">
-                    <img src="img/student_image.png" alt="haha" width="140" height="140"><br>
+                    <img src="img/student_image.png" alt="haha" width="140" height="140" class="responsive"><br>
                     <ul id = "courses">
-                        <li id = "student-course">Course #1 </li>
-                        <li id = "student-course">Course #2 </li>
-                        <li id = "student-course">Course #3 </li>
-                        <li id = "student-course">Course #4 </li>
-                        <li id = "student-course">Course #5 </li>
-                        <li id = "student-course">Course #6 </li>
+                        <li id = "student-course"><input type="checkbox">Course #1 </li>
+                        <li id = "student-course"><input type="checkbox">Course #2 </li>
+                        <li id = "student-course"><input type="checkbox">Course #3 </li>
+                        <li id = "student-course"><input type="checkbox">Course #4 </li>
+                        <li id = "student-course"><input type="checkbox">Course #5 </li>
+                        <li id = "student-course"><input type="checkbox">Course #6 </li>
                     </ul>
-                    <a class="btn">Withdraw</a>
+                     <a class="btn">Withdraw</a>
                  </div> 
             </section>
             <section class = "section-wrap">
                 <h3 id = "background-1"> Click "Enroll" to enroll in more courses: </h3><br>
                 <a class="btn" href="enrollment.html">Enroll</a>
             </section>
+                
             <footer class = "footer">
                 <p>Copyright &#169; 2021: By NC</p>
             </footer>
