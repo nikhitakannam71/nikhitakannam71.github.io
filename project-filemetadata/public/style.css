@@ -40,3 +40,13 @@ input#button {
   width: 60%;
   min-width: 400px;
 }
+
+footer {
+  background: white;
+  color: royalblue;
+  padding: 15px
+}
+
+footer a:hover {
+  color: blue;
+}

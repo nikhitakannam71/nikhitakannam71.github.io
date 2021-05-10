@@ -39,3 +39,14 @@ span{
   grid-template-columns: auto auto;
   justify-content: center
 }
+
+footer {
+  background: white;
+  color: #19C3FB;
+  padding: 10px
+}
+
+footer a:hover {
+  color: blue;
+}
+
