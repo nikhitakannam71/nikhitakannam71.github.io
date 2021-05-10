@@ -9,7 +9,7 @@ const app = express();
 
 // Basic Configuration
 const port = process.env.PORT || 3000;
-mongoose.connect('mongodb+srv://nkannam1:Nikki25first@cluster0.ouxc5.mongodb.net/URLShort?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://nsomeone:someoneDB123@cluster0.ouxc5.mongodb.net/URLShort?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const Short = new mongoose.Schema({url: String});
 const URl_  = mongoose.model('URl_', Short);

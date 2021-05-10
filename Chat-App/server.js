@@ -8,7 +8,7 @@ var mongoose = require('mongoose')
 
 
 mongoose.Promise = Promise
-var dbUrl = 'mongodb+srv://nkannam1:Nikki25first@cluster0.ouxc5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+var dbUrl = 'mongodb+srv://nsomeone:someoneDB123@cluster0.ouxc5.mongodb.net/Chat?retryWrites=true&w=majority'
 var Message = mongoose.model('Message', {
     name: String,
     message: String

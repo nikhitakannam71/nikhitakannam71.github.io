@@ -8,7 +8,7 @@ const shortId = require("shortid")
 
 
 let sub = { useNewUrlParser: true, useUnifiedTopology: true }
-mongoose.connect('mongodb+srv://nkannam1:Nikki25first@cluster0.ouxc5.mongodb.net/ExerciseTracker?retryWrites=true&w=majority', sub);
+mongoose.connect('mongodb+srv://nsomeone:someoneDB123@cluster0.ouxc5.mongodb.net/Tracker?retryWrites=true&w=majority', sub);
 
 const NewUserSch = mongoose.Schema({
   description:{type: String, required: true},
