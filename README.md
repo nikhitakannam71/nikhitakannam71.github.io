@@ -29,6 +29,8 @@ The projects from here are from FreeCodeCamp and include Timestamp Microservice,
 The term project is the QCFirst website and so far it include all the HTML and CSS. It also includes the User Managment of the project. 
 
 
+**You can navigate to the dashboard and other projects by clicking the link in the footer.**
+
 
 
 

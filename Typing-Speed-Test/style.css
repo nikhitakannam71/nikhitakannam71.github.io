@@ -198,11 +198,24 @@ body {
 }
 
 footer {
-    background: lightskyblue;
+    background: #b8b5ff;
     text-align: center;
-    color: white;
+    padding: 25px;
+    font-size: 18px;
+    font-family: Courier;
+    border-radius: 2px;
+
+}
+
+footer a{
+    margin: 10px;
+}
+
+footer a:link {
+   color: #4a47a3;
 }
 
 footer a:hover {
-    color: yellow;
+    color: white;
+    text-decoration: none;
 }

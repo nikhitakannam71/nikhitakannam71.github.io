@@ -7,6 +7,10 @@
     align-items: middle;
 }
 
+*{
+    background: #00adb5;
+}
+
 .clockbox,
 #clock {
     width: 100%;
@@ -15,7 +19,7 @@
 /* Clock styles */
 .circle {
     fill: none;
-    stroke:lightsteelblue;
+    stroke:#aad8d3;
     stroke-width: 9;
     stroke-miterlimit: 10;
 }
@@ -67,9 +71,19 @@
 
 footer {
     text-align: center;
-    color: lightskyblue;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Courier;
 }
 
+footer a:link {
+    color: white;
+    margin: 10px;
+}
+
+
+
 footer a:hover{
-    color: blue;
+    color: #393e46;
+    text-decoration:none;
 }

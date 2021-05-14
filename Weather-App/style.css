@@ -15,8 +15,6 @@ span{
   font-size: 6rem;
 }
 
-
-
 *{
   background: #19C3FB;
   color: white;
@@ -41,12 +39,18 @@ span{
 }
 
 footer {
-  background: white;
-  color: #19C3FB;
-  padding: 10px
+  padding: 20px;
+  font-size: 18px;
+  font-family: Courier;
+  text-align: center;
+}
+
+footer a{
+  margin: 10px;
 }
 
 footer a:hover {
   color: blue;
+  text-decoration: none;
 }
 
